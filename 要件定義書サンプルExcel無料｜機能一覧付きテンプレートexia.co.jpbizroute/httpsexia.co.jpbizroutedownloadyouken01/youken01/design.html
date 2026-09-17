@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式 | Bizroute</title>
+<meta name="description" content="システム開発に必要なドキュメント類のテンプレートを揃えました。要件定義書、基本設計書、詳細設計書、テスト仕様書のサンプルを無料でダウンロード可能です。">
+<meta name="thumbnail" content="https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png" /><!-- Diver OGP -->
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:title" content="基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式" />
+<meta property="og:description" content="システム開発に必要なドキュメント類のテンプレートを揃えました。要件定義書、基本設計書、詳細設計書、テスト仕様書のサンプルを無料でダウンロード可能です。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://exia.co.jp/bizroute/system_development_template.html" />
+<meta property="og:image" content="https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png" />
+<meta property="og:site_name" content="Bizroute" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式" />
+<meta name="twitter:url" content="https://exia.co.jp/bizroute/system_development_template.html" />
+<meta name="twitter:description" content="システム開発に必要なドキュメント類のテンプレートを揃えました。要件定義書、基本設計書、詳細設計書、テスト仕様書のサンプルを無料でダウンロード可能です。" />
+<meta name="twitter:image" content="https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png" />
+<!-- / Diver OGP -->
+<link rel="canonical" href="https://exia.co.jp/bizroute/system_development_template.html">
+<link rel="shortcut icon" href="https://exia.co.jp/bizroute/wp-content/uploads/favicon1.png">
+<!--[if IE]>
+		<link rel="shortcut icon" href="https://exia.co.jp/bizroute/wp-content/uploads/favicon1.ico">
+<![endif]-->
+<link rel="apple-touch-icon" href="" />
+<meta name='robots' content='max-image-preview' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel="alternate" type="application/rss+xml" title="Bizroute &raquo; フィード" href="https://exia.co.jp/bizroute/feed" />
+<link rel="alternate" type="application/rss+xml" title="Bizroute &raquo; コメントフィード" href="https://exia.co.jp/bizroute/comments/feed" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://exia.co.jp/bizroute/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fexia.co.jp%2Fbizroute%2Fsystem_development_template.html" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://exia.co.jp/bizroute/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fexia.co.jp%2Fbizroute%2Fsystem_development_template.html&#038;format=xml" />
+<!-- exia.co.jp is managing ads with Advanced Ads 2.0.26 – https://wpadvancedads.com/ --><script id="advads-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<!-- WP_Dependencies for styles
+<br />
+<b>Warning</b>:  Undefined array key "parent-style" in <b>/home/xs055380/exia.co.jp/public_html/bizroute/wp-content/themes/diver_child/functions.php</b> on line <b>115</b><br />
+-->
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--light-blue: #70b8f1;--wp--preset--color--light-red: #ff8178;--wp--preset--color--light-green: #2ac113;--wp--preset--color--light-yellow: #ffe822;--wp--preset--color--light-orange: #ffa30d;--wp--preset--color--blue: #00f;--wp--preset--color--red: #f00;--wp--preset--color--purple: #674970;--wp--preset--color--gray: #ccc;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: .8em;--wp--preset--font-size--medium: 1em;--wp--preset--font-size--large: 1.2em;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--xlarge: 1.5em;--wp--preset--font-size--xxlarge: 2em;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);--wp--custom--spacing--small: max(1.25rem, 5vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--typography--font-size--huge: clamp(2.25rem, 4vw, 2.75rem);--wp--custom--typography--font-size--gigantic: clamp(2.75rem, 6vw, 3.25rem);--wp--custom--typography--font-size--colossal: clamp(3.25rem, 8vw, 6.25rem);--wp--custom--typography--line-height--tiny: 1.15;--wp--custom--typography--line-height--small: 1.2;--wp--custom--typography--line-height--medium: 1.4;--wp--custom--typography--line-height--normal: 1.6;}:root { --wp--style--global--content-size: 769px;--wp--style--global--wide-size: 1240px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5em; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.5em; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.5em;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.5em;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.5em;}:root :where(.is-layout-grid){gap: 1.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-light-blue-color{color: var(--wp--preset--color--light-blue) !important;}.has-light-red-color{color: var(--wp--preset--color--light-red) !important;}.has-light-green-color{color: var(--wp--preset--color--light-green) !important;}.has-light-yellow-color{color: var(--wp--preset--color--light-yellow) !important;}.has-light-orange-color{color: var(--wp--preset--color--light-orange) !important;}.has-blue-color{color: var(--wp--preset--color--blue) !important;}.has-red-color{color: var(--wp--preset--color--red) !important;}.has-purple-color{color: var(--wp--preset--color--purple) !important;}.has-gray-color{color: var(--wp--preset--color--gray) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-light-blue-background-color{background-color: var(--wp--preset--color--light-blue) !important;}.has-light-red-background-color{background-color: var(--wp--preset--color--light-red) !important;}.has-light-green-background-color{background-color: var(--wp--preset--color--light-green) !important;}.has-light-yellow-background-color{background-color: var(--wp--preset--color--light-yellow) !important;}.has-light-orange-background-color{background-color: var(--wp--preset--color--light-orange) !important;}.has-blue-background-color{background-color: var(--wp--preset--color--blue) !important;}.has-red-background-color{background-color: var(--wp--preset--color--red) !important;}.has-purple-background-color{background-color: var(--wp--preset--color--purple) !important;}.has-gray-background-color{background-color: var(--wp--preset--color--gray) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-light-blue-border-color{border-color: var(--wp--preset--color--light-blue) !important;}.has-light-red-border-color{border-color: var(--wp--preset--color--light-red) !important;}.has-light-green-border-color{border-color: var(--wp--preset--color--light-green) !important;}.has-light-yellow-border-color{border-color: var(--wp--preset--color--light-yellow) !important;}.has-light-orange-border-color{border-color: var(--wp--preset--color--light-orange) !important;}.has-blue-border-color{border-color: var(--wp--preset--color--blue) !important;}.has-red-border-color{border-color: var(--wp--preset--color--red) !important;}.has-purple-border-color{border-color: var(--wp--preset--color--purple) !important;}.has-gray-border-color{border-color: var(--wp--preset--color--gray) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xlarge-font-size{font-size: var(--wp--preset--font-size--xlarge) !important;}.has-xxlarge-font-size{font-size: var(--wp--preset--font-size--xxlarge) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet'  href='https://exia.co.jp/bizroute/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.86&#038;theme=6.1.21' media='all'>
+<style id="eztoc-inline-css">
+div#ez-toc-container .ez-toc-title {font-size: 110%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-size: 95%;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}.ez-toc-box-title {font-weight: bold; margin-bottom: 10px; text-align: center; text-transform: uppercase; letter-spacing: 1px; color: #666; padding-bottom: 5px;position:absolute;top:-4%;left:5%;background-color: inherit;transition: top 0.3s ease;}.ez-toc-box-title.toc-closed {top:-25%;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+/*# sourceURL=eztoc-inline-css */
+</style>
+<link rel='stylesheet'  href='https://exia.co.jp/bizroute/wp-content/themes/diver_child/css/font-awesome.min.css?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21' media='all'>
+<link rel='stylesheet'  href='https://exia.co.jp/bizroute/wp-content/themes/diver/css/style.min.css?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21' media='all'>
+<link rel='stylesheet'  href='https://exia.co.jp/bizroute/wp-content/themes/diver_child/style.css?theme=6.1.21' media='all'>
+<link rel='stylesheet'  href='https://exia.co.jp/bizroute/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.css?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21' media='screen'>
+<!-- WP_Dependencies for scripts
+-->
+<script id="jquery-core-js"async='async' src="https://exia.co.jp/bizroute/wp-includes/js/jquery/jquery.min.js?ver=3.7.1&#038;theme=6.1.21"></script>
+<script id="jquery-migrate-js"async='async' src="https://exia.co.jp/bizroute/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1&#038;theme=6.1.21"></script>
+<link rel="https://api.w.org/" href="https://exia.co.jp/bizroute/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://exia.co.jp/bizroute/wp-json/wp/v2/posts/4310" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://exia.co.jp/bizroute/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://exia.co.jp/bizroute/?p=4310' />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9BRKNGZXK"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', "G-H9BRKNGZXK");
+      </script>
+          <meta name="google-site-verification" content="tHTYQjEQjvhwGXswpBrP5RVRqOmh-IkgXw9vQBnk-As" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0">
+<!--Adsense自動広告-->
+<script async
+     crossorigin="anonymous" data-type="lazy" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7718566261169673"></script>
+
+<!--start ad block for adsense-->
+<script async src="https://fundingchoicesmessages.google.com/i/pub-7718566261169673?ers=1" nonce="74PndWcv55O3fGo7tD57fA"></script><script nonce="74PndWcv55O3fGo7tD57fA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<!--end ad block for adsense-->
+<script>
+  window.gnshbrequest = window.gnshbrequest || { cmd: [] };
+  gnshbrequest.cmd.push(function() {
+    if (isMobile()) {
+        gnshbrequest.registerPassback("1500377");
+    }
+    else{
+        gnshbrequest.registerPassback("1494086");
+        gnshbrequest.registerPassback("1500376");
+        gnshbrequest.registerPassback("1500378");
+    }
+  });
+  function isMobile() {
+    var ua = navigator.userAgent;
+    if (ua.indexOf("iPhone") >= 0
+        || (ua.indexOf("Android") >= 0 && ua.indexOf("Mobile") >= 0)
+        || (ua.indexOf("Windows") >= 0 && ua.indexOf("Phone") >= 0)
+        || (ua.indexOf("Firefox") >= 0 && ua.indexOf("Mobile") >= 0)
+        || ua.indexOf("Blackberry") >= 0
+    ) return true;
+    else return false;
+  }
+</script><script type="application/ld+json" class="json-ld">[
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://exia.co.jp/bizroute/system_development_template.html"
+        },
+        "headline": "基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式",
+        "image": [
+            "https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png",
+            "https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png",
+            "https://exia.co.jp/bizroute/wp-content/uploads/sysytem_development.png"
+        ],
+        "description": "システム開発に必要なドキュメント類のテンプレートを揃えました。要件定義書、基本設計書、詳細設計書、テスト仕様書のサンプルを無料でダウンロード可能です。",
+        "datePublished": "2020-02-22T12:00:14+09:00",
+        "dateModified": "2026-05-25T10:43:30+09:00",
+        "articleSection": [
+            "開発・設計"
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "ビズルート編集部（山中恵）",
+            "url": "https://exia.co.jp/bizroute/author/writer"
+        },
+        "publisher": {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Bizroute",
+            "description": "ビジネスに役立つノウハウやツールを紹介するオンラインメディア",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://exia.co.jp/bizroute/wp-content/uploads/bizroute_logo_250x60.png"
+            }
+        }
+    }
+]</script>
+<style>body{background-image:url('');}</style> <style> #onlynav ul ul,#nav_fixed #nav ul ul,.header-logo #nav ul ul {visibility:hidden;opacity:0;transition:.2s ease-in-out;transform:translateY(10px);}#onlynav ul ul ul,#nav_fixed #nav ul ul ul,.header-logo #nav ul ul ul {transform:translateX(-20px) translateY(0);}#onlynav ul li:hover > ul,#nav_fixed #nav ul li:hover > ul,.header-logo #nav ul li:hover > ul{visibility:visible;opacity:1;transform:translateY(0);}#onlynav ul ul li:hover > ul,#nav_fixed #nav ul ul li:hover > ul,.header-logo #nav ul ul li:hover > ul{transform:translateX(0) translateY(0);}</style>        <style>
+	        .catpage_content_wrap .catpage_inner_content{
+	        	width: 100%;
+	        	float: none;
+	        }
+        </style>
+    <style>body{background-color:#efefef;color:#333333;}:where(a){color:#0f6dbf;}:where(a):hover{color:#6495ED}:where(.content){color:#333333;}:where(.content) a{color:#0f6dbf;}:where(.content) a:hover{color:#6495ED;}.header-wrap,#header ul.sub-menu, #header ul.children,#scrollnav,.description_sp{background:#ffffff;color:#555555}.header-wrap a,#scrollnav a,div.logo_title{color:#0f6dbf;}.header-wrap a:hover,div.logo_title:hover{color:#6495ED}.drawer-nav-btn span{background-color:#0f6dbf;}.drawer-nav-btn:before,.drawer-nav-btn:after {border-color:#0f6dbf;}#scrollnav ul li a{background:rgba(255,255,255,.8);color:#505050}.header_small_menu{background:#3a5896;color:#fff}.header_small_menu a{color:#fff}.header_small_menu a:hover{color:#6495ED}#nav_fixed.fixed, #nav_fixed #nav ul ul{background:#ffffff;color:#555555}#nav_fixed.fixed a,#nav_fixed .logo_title{color:#333355}#nav_fixed.fixed a:hover{color:#6495ED}#nav_fixed .drawer-nav-btn:before,#nav_fixed .drawer-nav-btn:after{border-color:#333355;}#nav_fixed .drawer-nav-btn span{background-color:#333355;}#onlynav{background:#fff;color:#555555}#onlynav ul li a{color:#555555}#onlynav ul ul.sub-menu{background:#fff}#onlynav div > ul > li > a:before{border-color:#555555}#onlynav ul > li:hover > a:hover,#onlynav ul>li:hover>a,#onlynav ul>li:hover li:hover>a,#onlynav ul li:hover ul li ul li:hover > a{background:#5d8ac1;color:#fff}#onlynav ul li ul li ul:before{border-left-color:#fff}#onlynav ul li:last-child ul li ul:before{border-right-color:#fff}#bigfooter{background:#fff;color:#333333}#bigfooter a{color:#333355}#bigfooter a:hover{color:#6495ED}#footer{background:#fff;color:#999}#footer a{color:#333355}#footer a:hover{color:#6495ED}#sidebar .widget{background:#fff;color:#333;}#sidebar .widget a{color:#333355;}#sidebar .widget a:hover{color:#6495ED;}.post-box-contents,#main-wrap #pickup_posts_container img,.hentry, #single-main .post-sub,.navigation,.single_thumbnail,.in_loop,#breadcrumb,.pickup-cat-list,.maintop-widget, .mainbottom-widget,#share_plz,.sticky-post-box,.catpage_content_wrap,.cat-post-main{background:#fff;}.post-box{border-color:#eee;}.drawer_content_title,.searchbox_content_title{background:#eee;color:#333;}.drawer-nav,#header_search{background:#fff}.drawer-nav,.drawer-nav a,#header_search,#header_search a{color:#000}#footer_sticky_menu{background:rgba(255,255,255,.8)}.footermenu_col{background:rgba(255,255,255,.8);color:#333;}a.page-numbers{background:#afafaf;color:#fff;}.pagination .current{background:#607d8b;color:#fff;}</style><style>@media screen and (min-width:1201px){#main-wrap,.header-wrap .header-logo,.header_small_content,.bigfooter_wrap,.footer_content,.container_top_widget,.container_bottom_widget{width:90%;}}@media screen and (max-width:1200px){ #main-wrap,.header-wrap .header-logo, .header_small_content, .bigfooter_wrap,.footer_content, .container_top_widget, .container_bottom_widget{width:96%;}}@media screen and (max-width:768px){#main-wrap,.header-wrap .header-logo,.header_small_content,.bigfooter_wrap,.footer_content,.container_top_widget,.container_bottom_widget{width:100%;}}@media screen and (min-width:960px){#sidebar {width:270px;}}</style><style>@media screen and (min-width:1201px){#main-wrap{width:90%;}}@media screen and (max-width:1200px){ #main-wrap{width:96%;}}</style><style type="text/css" id="diver-custom-heading-css">.content h2:where(:not([class])),:where(.is-editor-blocks) :where(.content) h2:not(.sc_heading){color:#fff;background-color:#3a5896;border-radius:5px;}.content h3:where(:not([class])),:where(.is-editor-blocks) :where(.content) h3:not(.sc_heading){color:#333333;background-color:#555555;border-bottom:2px solid #555555;background:transparent;padding-left:0px;padding-right:0px;}.content h4:where(:not([class])),:where(.is-editor-blocks) :where(.content) h4:not(.sc_heading){color:#000;background-color:#000;background:transparent;display:flex;align-items:center;padding:0px;}.content h4:where(:not([class])):before,:where(.is-editor-blocks) :where(.content) h4:not(.sc_heading):before{content:"";width:.6em;height:.6em;margin-right:.6em;background-color:#000;transform:rotate(45deg);}.content h5:where(:not([class])),:where(.is-editor-blocks) :where(.content) h5:not(.sc_heading){color:#000;}</style>
+<!-- Clarity tracking code for https://bizroute.net/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "582jitfv6w");
+</script>
+<style id="wp-custom-css">
+*::before,
+*::after {
+  font-family: 'Noto Sans JP',
+    'BIZ UDゴシック',
+    'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans',
+    'Meiryo',
+    sans-serif;
+}
+
+/*新レイアウト*/
+.img-box-new{
+  text-align:center;
+}
+.img-box-new img{
+ border:solid 1px #ccc;
+}
+
+.new-btn-word .simple-download-counter-link{
+ background-color:#295596!important;
+ color:#fff!important;
+  font-size:90%!important;
+  line-height: 1.4;
+  width: 220px; 
+}
+
+.new-btn-excel .simple-download-counter-link{
+background-color:#217144!important;
+color:#fff!important;
+  font-size:90%!important;
+  line-height: 1.4;
+  width: 220px; 
+}
+
+.new-btn-pdf .simple-download-counter-link{
+background-color:#D1D1D1!important;
+#D1D1D1;color:#000!important;
+  font-size:90%!important;
+  line-height: 1.4;
+width: 220px; 
+}
+
+/*関連リンクに少しの装飾*/
+.related-link-list li{
+  padding:10px 0;
+  border-bottom:1px solid #eee;
+}
+.related-link-list a{
+  font-weight:600;
+  color:#1a5fb4;
+  text-decoration:none;
+}
+.related-link-list a:hover{ text-decoration:underline; }
+.related-note{
+  color:#666;
+  font-size:.9em;
+  margin-left:6px;
+}
+
+  .category-title {
+    margin: 32px 0 16px;
+    padding: 6px 12px;
+    border-left: 4px solid #347c7c;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f7f9fc;
+    width:90%;
+    text-align:left;
+  }
+
+.template-grid .grid-title {
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  background: none;
+  color: inherit;
+	  text-align: center;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 30px 0 40px;
+}
+
+.template-grid .thumb {
+  aspect-ratio: 4 / 5; 
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+overflow: hidden;
+  display: flex;
+  align-items: flex-start;   /* ★ 上側に寄せる */
+  justify-content: center;
+}
+
+.template-grid .thumb img {
+  width: 100%;
+height: auto;              /* ★ ここがポイント：100%にしない */
+  object-fit: contain;       /* 枠内に収まるように表示 */
+  object-position: top center; /* ★ 上から表示（縦長のとき効く） */
+  display: block;
+}
+
+.gsheet-note{
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.gsheet-note a {
+  text-decoration: underline;
+  color: #2a5ca4;
+}
+
+.gsheet-note a:hover {
+  text-decoration: none;
+}
+
+/*ボタン装飾*/
+.word-down{
+background-color:#295596!important;
+	color:#fff;line-height:1.7;
+}
+
+.excel-down{
+background-color:#217144!important;
+	color:#fff;line-height:1.7;
+}
+
+.ppt-down{
+background-color:#DC4C2C!important;
+	color:#fff;line-height:1.7;
+}
+
+.pdf-down{
+background-color:#C8C8C8!important;
+	color:#333!important;line-height:1.7;
+}
+
+.sheet-down {
+  /*background-color: #0F9D58;*/
+background-color: #4C8DCB!important;
+  color: #fff;
+	line-height:1.7;
+}
+
+/*アコーディオン*/
+/* コンテナ */
+.example-accordion {
+  margin: 0.75rem 0 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* トグルヘッダ */
+.example-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: .9rem 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* デフォの三角を消してカスタムアイコン */
+.example-accordion summary::-webkit-details-marker { display: none; }
+.example-accordion summary::after {
+  content: "＋";
+  font-weight: 700;
+  transition: transform .2s ease;
+}
+.example-accordion details[open] summary::after {
+  content: "－";
+}
+
+/* 補助テキスト */
+.example-accordion .ex-meta {
+  font-weight: 500;
+  font-size: .85rem;
+  color: #666;
+}
+
+/* 中身（既存の .example-text をそのまま利用） */
+.example-accordion .example-text {
+  background-color: #f9f9ff;
+  border-top: 1px solid #eee;
+  padding: 1rem 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-size: .95rem;
+}
+.example-accordion .example-text p { margin: 0 0 .9rem; }
+.example-accordion .example-text p:last-child { margin-bottom: 0; }
+
+/* アコーディオン */
+.example-accordion summary:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* 印刷はすべて展開 */
+@media print {
+  details { open: open; }      /* 一部ブラウザは下のルールが必要 */
+  details:not([open]) { open: open; }
+}
+
+
+/*新レイアウト*/
+.example-text {
+  background-color: #f9f9ff;
+  border-left: 4px solid #4a90e2;
+  padding: 1em 1.2em 0.5em 1.2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+  border-radius: 4px;
+}
+
+.example-text2 {
+  background-color: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 1em 1.2em 0.5em 1.2em;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2d2007;
+  border-radius: 4px;
+}
+
+p { font-family: inherit; margin: 0 0 1em; }
+
+:root{
+  --tmpl-gap: 20px;
+  --tmpl-radius: 4px;
+  --tmpl-shadow: 0 6px 16px rgba(0,0,0,.08);
+  --tmpl-border: 1px solid #eee;
+  --text: #222;
+  --muted: #666;
+  --bg: #fff;
+}
+
+.template-card{
+  display: flex;
+  gap: var(--tmpl-gap);
+  align-items: stretch;
+  background: var(--bg);
+  border: var(--tmpl-border);
+  border-radius: var(--tmpl-radius);
+  box-shadow: var(--tmpl-shadow);
+  padding: 16px;
+  margin: 24px 0;
+}
+
+.template-media{
+  flex: 0 0 35%;
+  max-width: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.template-media .thumb{
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 350 / 400;
+  /*background: #f7f7f7;*/
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.template-media .thumb img{
+  width: 100%;
+  height: auto;
+	/*object-fit: contain;*/
+  display: block;
+}
+
+.template-body{
+  flex: 1 1 65%;
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.template-title{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 4px 0 8px 0;
+}
+
+.template-meta{
+  font-size: .9rem;
+  color: var(--muted);
+  margin: 0 0 8px 0;
+}
+
+.template-desc{
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.template-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 16px;
+	justify-content: center;
+  align-content: flex-start;
+}
+
+/*スマホで画像、説明を縦に*/
+@media (max-width: 768px) {
+  .template-card {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .template-media, .template-body {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .template-media {
+    margin-bottom: 16px;
+    justify-content: center;
+  }
+}
+
+/* ボタン共通（.btn は必須） */
+.template-actions .btn{
+	font-size: 90%;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  padding: 0 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  margin: 0;
+  flex: 1 1 180px;
+  max-width: 220px;
+	line-height:1.7;
+}
+.template-actions .btn:active{ transform: translateY(1px); }
+
+/* 狭い幅はFlex：折り返しで gap だけが“すき間” */
+@media (max-width: 820px){
+  .template-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  .template-actions .btn{
+    inline-size: auto;
+    flex: 1 1 180px;
+    max-width: 220px;
+		line-height:1.7;
+  }
+}
+
+/* 各形式の色 */
+.btn-excel{
+  background: #217144;
+  color: #fff;
+  border-color: #1a5a37;
+}
+.btn-excel:hover{ filter: brightness(0.95); }
+
+.btn-word{
+  background: #295596;
+  color: #fff;
+  border-color: #21467b;
+}
+.btn-word:hover{ filter: brightness(0.95); }
+
+.btn-pdf{
+  background: #A9A9A9;
+  color: #000;
+  border-color: #bdbdbd;
+}
+.btn-pdf:hover{ filter: brightness(0.96); }
+
+
+/*CLS対策*/
+#ez-toc-container nav ul.eztoc-toggle-hide-by-default { display: none; }
+#ez-toc-container.ez-toc-open nav ul.eztoc-toggle-hide-by-default { display: block; }
+:where(h2[id], h3[id], h4[id]) { scroll-margin-top: 80px; }
+#ez-toc-container .ez-toc-icon-toggle-span { transition: transform .2s ease; }
+#ez-toc-container.ez-toc-open .ez-toc-icon-toggle-span { transform: rotate(180deg); }
+
+
+/* 関連リンク*/
+.flow-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.flow-links p {
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 4px solid #0066cc;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.flow-links p::before {
+  content: "▶ ";
+  color: #0066cc;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.flow-links a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 4px;
+}
+
+.flow-links a::after {
+  /*content: " →";*/
+  color: #999;
+  font-weight: normal;
+}
+
+.flow-links a:hover {
+  text-decoration: underline;
+  color: #004999;
+}
+
+
+/* モバイル対応：幅768px以下は縦カード風に */
+@media (max-width: 768px) {
+  .flow-links {
+    flex-direction: column;
+  }
+  .flow-links p {
+    flex: 1 1 100%;
+    margin: 0;
+  }
+}
+
+/*テーブルレイアウト*/
+.tbl-basic{
+	font-size:90%;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 6px solid #ffc107;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 6px;
+}
+
+.custom-box {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 1em 0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.template-point-box {
+  background-color: #f9f9fc;
+  border: 1px solid #d0d7e2;
+  border-left: 5px solid #5d8ac1;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+	text-align:left;
+}
+
+.template-point-box h5 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #34495e;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.template-point-box ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.template-point-box li {
+  margin-bottom: 8px;
+}
+
+.template-point-box li b {
+  color: #2c3e50;
+}
+
+.faq-box {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 16px;
+  margin: 1em 0;
+  border-radius: 6px;
+}
+
+.faq-box .faq-question {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #295596;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+.faq-box .faq-question::before {
+  content: "Q.";
+  position: absolute;
+  left: 0;
+  color: #295596;
+  font-weight: bold;
+}
+
+.faq-box .faq-answer {
+  margin-left: 1.2em;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+}
+
+.faq-box .faq-answer::before {
+  content: "A.";
+  position: absolute;
+  left: -1.2em;
+  color: #777;
+  font-weight: bold;
+}
+
+/*投稿ページのカテゴリを消す*/
+.post-meta .cat-tag {
+    display: none;
+}
+
+.related_link{
+	margin:30px 0 30px 0;
+	font-size:95%;
+	line-height:1.8em;
+}
+
+.related_link a{
+	font-size:90%;
+	font-weight:bold;
+	text-decoration:underline;
+	padding:0 0 0 10px;
+}
+
+.terms{
+	border:solid 1px #ddd;
+	padding:10px;
+	margin:50px 0 20px 0;
+	font-size:80%;
+}
+
+.down{
+	margin:40px 0 60px 0;
+	text-align:center;
+}
+
+.link{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.title{
+  font-weight:bold;
+  font-size:110%;
+}
+
+@media only screen and (min-width: 640px) {
+
+	.image_box {
+		width:700px;
+	}
+  
+  	.image_box2 {
+		width:450px;
+	}
+
+  	.image_box_max {
+		width:100%;
+	}
+
+    .image_box_small {
+		width:400px;
+	}
+
+    .image_box_small2 {
+		width:350px;
+	}
+  
+    .image_box_850 {
+		width:800px;      
+	}
+}
+
+@media only screen and (max-width: 640px) {
+  	.image_box .image_box2 .image_box_max .image_box_850 .image_box_small {
+		width:100%;
+	}
+}
+  
+table.type1 {
+	border-collapse: separate;
+	border-spacing: 0;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+table.type1 th {
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #eee;
+}
+table.type1 td {
+	padding: 10px;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/*new box1*/
+.nbox1{
+  margin:0 0 15px 0;
+	border:solid 1px #647ab5;
+	background-color:#f0f7fd;
+	padding:15px 10px 15px 20px;
+}
+
+.nbox1x{
+  margin:0 0 15px 0;
+	border:solid 1px #647ab5;
+	background-color:#f0f7fd;
+	padding:15px 10px 0 20px;
+}
+
+.nbox2{
+	margin:0 0 15px 0;
+	border:solid 1px #ccc;
+	background-color:#fafafa;
+	padding:15px 10px 15px 20px;
+}
+
+.nbox2x{
+	margin:0 0 15px 0;
+	border:solid 1px #ccc;
+	background-color:#fafafa;
+	padding:15px 10px 0 20px;
+}
+
+.nbox3{
+	margin:0 0 15px 0;
+	border:solid 1px #ccc;
+	background-color:#FEF9E7;
+	padding:15px 10px 15px 20px;
+}
+
+.nbox3x{
+	margin:0 0 15px 0;
+	border:solid 1px #ccc;
+	background-color:#FEF9E7;
+	padding:15px 10px 0 20px;
+}
+
+.box1 {
+    position: relative;
+    margin: 3em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.box1 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -15px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+span.strong3{
+	font-weight:bold;
+	color:#333;
+	background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+span.strong3:before, em:before, b:before { content:" "; } 
+span.strong3:after, em:after, b:after { content:" "; }
+
+</style>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<link rel='stylesheet'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' media='all'>
+<link rel='stylesheet'  href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.css' media='all'>
+
+</head>
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage" class="wp-singular post-template-default single single-post postid-4310 single-format-standard wp-embed-responsive wp-theme-diver wp-child-theme-diver_child  l-sidebar-right aa-prefix-advads-">
+
+<div id="container">
+<!-- header -->
+	<!-- lpページでは表示しない -->
+	<div id="header" class="clearfix">
+					<header class="header-wrap" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="header_small_menu clearfix">
+		<div class="header_small_content">
+			<div id="description">ビジネスに役立つノウハウやツールを紹介するオンラインメディア</div>
+			<nav class="header_small_menu_right" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+				<ul id="menu-%e3%83%9f%e3%83%8b%e3%83%98%e3%83%83%e3%83%80%e3%83%bc" class="menu"><li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="https://exia.co.jp/bizroute/sitemapx.html">サイトマップ</a></li>
+<li id="menu-item-29679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29679"><a href="https://exia.co.jp/bizroute/hozon-site.html">参考リンク</a></li>
+<li id="menu-item-8062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8062"><a href="https://en.bizroute.net/">English</a></li>
+</ul>			</nav>
+		</div>
+	</div>
+
+			<div class="header-logo clearfix">
+				
+
+				<!-- /Navigation -->
+
+								<div id="logo">
+										<a href="https://exia.co.jp/bizroute/">
+						
+															<img src="https://exia.co.jp/bizroute/wp-content/uploads/bizroute_logo_250x60.png" alt="Bizroute" width="250" height="60">
+							
+											</a>
+				</div>
+							</div>
+		</header>
+		<nav id="scrollnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+					</nav>
+									<nav id="onlynav" class="onlynav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
+							</nav>
+					</div>
+	<div class="d_sp">
+		</div>
+	
+	<div id="main-wrap">
+	<!-- main -->
+		<div class="l-main-container">
+		<main id="single-main"  style="margin-right:-290px;padding-right:290px;" role="main">
+					
+								<div id="breadcrumb"><ul itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://exia.co.jp/bizroute/" itemprop="item"><span itemprop="name">bizroute</span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://exia.co.jp/bizroute/category/products" itemprop="item"><span itemprop="name">開発・設計</span></a><meta itemprop="position" content="2" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式</span><meta itemprop="position" content="3" /></li></ul></div> 
+					<div id="content_area" class="fadeIn animated">
+						<div class="content_area_side">
+	<div id="share_plz" class="sns">
+
+		<a class='facebook' href='http://www.facebook.com/share.php?u=https://exia.co.jp/bizroute/?p=4310&title=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式'><i class="fa fa-facebook"></i><span class='sns_name'>Facebook</span></a><a class='twitter' href='https://x.com/share?url=https://exia.co.jp/bizroute/?p=4310&text=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式&tw_p=tweetbutton'><svg width="1200" height="1227" viewbox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                </svg><span class='sns_name'>post</span></a><a class='hatebu' href='https://b.hatena.ne.jp/add?mode=confirm&url=https://exia.co.jp/bizroute/?p=4310&title=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式'><span class='sns_name'>はてブ</span></a>
+	</div>
+</div>
+						<article id="post-4310" class="post-4310 post type-post status-publish format-standard has-post-thumbnail hentry category-products">
+							<header>
+								<div class="post-meta clearfix">
+									<div class="cat-tag">
+																					<div class="single-post-category" style="background:"><a href="https://exia.co.jp/bizroute/category/products" rel="category tag">開発・設計</a></div>
+																													</div>
+
+									<h1 class="single-post-title entry-title">基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式</h1>
+									<div class="post-meta-bottom">
+																																					<time class="single-post-date modified" datetime="2026-05-25"><i class="fa fa-refresh" aria-hidden="true"></i>2026年5月25日</time>
+																		
+									</div>
+																	</div>
+								    
+            <div class="share-button sns big" >
+                <a class='facebook' href='http://www.facebook.com/share.php?u=https://exia.co.jp/bizroute/?p=4310&title=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式' target='_blank' rel='noopener noreferrer'><i class="fa fa-facebook"></i><span class='sns_name'>Facebook</span></a><a class='twitter' href='https://x.com/share?url=https://exia.co.jp/bizroute/?p=4310&text=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式&tw_p=tweetbutton' target='_blank' rel='noopener noreferrer'><svg width="1200" height="1227" viewbox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                </svg><span class='sns_name'>post</span></a><a class='hatebu' href='https://b.hatena.ne.jp/add?mode=confirm&url=https://exia.co.jp/bizroute/?p=4310&title=基本設計書・詳細設計書テンプレート Excel無料｜設計書サンプル一式' target='_blank' rel='noopener noreferrer'><span class='sns_name'>はてブ</span></a><a class='feedly' href='https://feedly.com/i/subscription/feed%2Fhttps://exia.co.jp/bizroute/?p=4310%2Ffeed' target='_blank' rel='noopener noreferrer'><i class="fa fa-rss" aria-hidden="true"></i><span class='sns_name'>Feedly</span></a>    
+        </div>
+    							</header>
+							<section class="single-post-main">
+																		
+
+									<div class="content">
+																		<div id="advads-2129832662" class="advads-top1 advads-entity-placement" style="height: 400px;"><script async
+     crossorigin="anonymous" data-type="lazy" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7718566261169673"></script>
+<!-- ExiaBizroute_mobile_CLS -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7718566261169673"
+     data-ad-slot="4271552303"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><p>システム開発の設計書は、中身を書く前に、章立てや表の作り方で手が止まりがちです。特に月末のレビュー前や、取引先へ提出する直前だと、白紙のExcelから作るのは少ししんどいです。</p>
+<p>このページでは、<strong>基本設計書・詳細設計書</strong>を中心に、要件定義書、テスト仕様書などのExcelテンプレートをまとめました。社内システムの小さな改修から、SI案件のたたき台、学習用のサンプルまで使いやすい構成です。</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_86 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title" style="cursor:inherit">目次</p>
+<span class="ez-toc-title-toggle"><a href="#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Toggle Table of Content"><span class="ez-toc-js-icon-con"><span class=""><span class="eztoc-hide" style="display:none;">Toggle</span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg" class="list-377408" width="20px" height="20px" viewbox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"></path></svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewbox="0 0 24 24" version="1.2" baseprofile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"/></svg></span></span></span></a></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 eztoc-toggle-hide-by-default' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#i" >基本設計書・詳細設計書テンプレートの選び方</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-2" href="#i-2" >仕様書・設計書テンプレート（Excel）一覧｜サンプル画像付き</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#i-3" >要件定義書テンプレート（Excel）サンプル付き</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#i-4" >基本設計書テンプレート（Excel）｜画面一覧・機能一覧付き</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#i-5" >詳細設計書テンプレート（Excel）サンプル一式</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-6" href="#i-6" >テスト仕様書テンプレート（単体・結合・総合テスト用Excel）</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-7" href="#i-7" >基本設計書と詳細設計書の違い</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-8" href="#i-8" >基本設計書の項目例｜画面一覧・画面遷移図・機能一覧</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-9" href="#i-9" >システム設計書テンプレートとして使う場合</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-10" href="#i-10" >詳細設計書テンプレートに入れる項目例</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="#i-11" >このページの仕様書テンプレートについて</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-12" href="#i-12" >テンプレートを使う前に決めておくこと</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-13" href="#i-13" >システム開発の初期に役立つテンプレート</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#i-14" >体制図テンプレート（プロジェクト組織の可視化）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#i-15" >議事録テンプレート（会議記録用ひな形）</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-16" href="#i-16" >スケジュール管理・タスク管理テンプレート（Excel）</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-17" href="#i-17" >WBSテンプレート（業務分解・工数見積）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-18" href="#i-18" >ガントチャートテンプレート（進捗・納期管理）</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-19" href="#i-19" >コミュニケーション管理テンプレート（Excel）</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-20" href="#i-20" >Q&Aシートテンプレート（質問と回答の管理）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-21" href="#i-21" >課題管理表テンプレート（問題・対応状況の記録）</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-22" href="#i-22" >よくある失敗と直し方（設計書作成編）</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-23" href="#i-23" >FAQ｜設計書テンプレートのよくある質問</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-24" href="#i-24" >まとめ｜基本設計書・詳細設計書テンプレートの使い方</a></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-25" href="#i-25" >作成・監修体制</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="i"></span>基本設計書・詳細設計書テンプレートの選び方<span class="ez-toc-section-end"></span></h2>
+<p>どれを使うか迷ったときは、まず「誰に見せる文書か」で分けると選びやすくなります。管理側や発注者に見せるなら基本設計書、開発担当者に渡すなら詳細設計書、という分け方です。</p>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:24%;">探しているもの</th>
+<th style="width:36%;">使う場面</th>
+<th style="width:40%;">向いているテンプレート</th>
+</tr>
+<tr>
+<td>基本設計書</td>
+<td>システム全体の構成、機能、画面、帳票を整理したいとき</td>
+<td>基本設計書テンプレート、画面一覧、画面遷移図、機能一覧、帳票一覧</td>
+</tr>
+<tr>
+<td>詳細設計書</td>
+<td>処理内容、入出力、例外処理などを開発担当者向けにまとめたいとき</td>
+<td>詳細設計書テンプレート、モジュール設計、インターフェース定義</td>
+</tr>
+<tr>
+<td>システム設計書</td>
+<td>基本設計書と詳細設計書を分けず、1つの文書でまとめたいとき</td>
+<td>基本設計書テンプレートをベースに、詳細項目を追加して調整</td>
+</tr>
+<tr>
+<td>仕様書テンプレート</td>
+<td>機能、画面、データ、テスト項目などをExcelで整理したいとき</td>
+<td>要件定義書、基本設計書、詳細設計書、テスト仕様書</td>
+</tr>
+</table>
+<div class="clearfix diver_widget_adarea hid"><div class="diver_ad">
+                      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7718566261169673" data-ad-slot="4271552303" data-ad-format="rectangle"></ins>
+                      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div><h2><span class="ez-toc-section" id="i-2"></span>仕様書・設計書テンプレート（Excel）一覧｜サンプル画像付き<span class="ez-toc-section-end"></span></h2>
+<p>システム開発でよく使う文書のうち、要件定義書、基本設計書、詳細設計書、テスト仕様書・報告書のテンプレートをダウンロードできます。</p>
+<div style="margin:8px 0 16px; color:#666;">※Excelファイルは、すべて日本語ファイル名のzip形式で配布しています。ファイル名が文字化けする場合は、解凍ソフトを変えると直ることがあります。</div>
+<h3><span class="ez-toc-section" id="i-3"></span>要件定義書テンプレート（Excel）サンプル付き<span class="ez-toc-section-end"></span></h3>
+<p>表紙、更新履歴、目次、本文の4シート構成です。要件定義の段階では、業務フローや利用者、対象範囲を先にそろえておくと、後の基本設計で迷いにくくなります。</p>
+<div>
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/youken1.png"><img decoding="async" class="bd" src="https://exia.co.jp/bizroute/wp-content/uploads/youken1-400x283.png" width="190" alt="要件定義書サンプル 表紙｜仕様書テンプレート Excel 見本"></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/youken2.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youken2-400x283.png" width="190" alt="要件定義書サンプル 更新履歴｜仕様書 テンプレート excel 例"></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/youken3.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youken3-400x283.png" width="190" alt="要件定義書サンプル 目次｜システム設計書 テンプレート 章立て例"></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/youken4.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youken4-400x283.png" width="190" alt="要件定義書サンプル 本文｜設計書 テンプレート Excel 記入例"></a>
+</div>
+<div style="text-align:center;">
+<a class="template_link" href="https://exia.co.jp/bizroute/download/youken01">要件定義書テンプレート</a>
+</div>
+<h3><span class="ez-toc-section" id="i-4"></span>基本設計書テンプレート（Excel）｜画面一覧・機能一覧付き<span class="ez-toc-section-end"></span></h3>
+<p>基本設計書は、要件定義で決まった内容をもとに、システム全体の作りを整理する文書です。発注者、PM、社内の管理側が確認することも多いので、細かすぎる処理ロジックよりも、全体像が追える構成にしておくと使いやすくなります。</p>
+<div style="text-align:center;">
+<a class="template_link" href="https://exia.co.jp/bizroute/wp-content/uploads/kihon_sekkei.zip">基本設計書テンプレート</a>
+</div>
+<div class="sc_heading bborder tb black"><span class="sc_title">基本設計書テンプレートに含まれるExcel</span></div>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:22%;">名称</th>
+<th style="width:78%;">説明</th>
+</tr>
+<tr>
+<td>システム構成図</td>
+<td>サーバー、ネットワーク、外部サービスなど、システム全体のつながりを整理する図です。</td>
+</tr>
+<tr>
+<td>業務フロー図</td>
+<td>業務の流れを順番に追えるようにまとめる図です。利用者の操作や担当部署の切り分けにも使えます。</td>
+</tr>
+<tr>
+<td>テーブル定義書</td>
+<td>DBテーブルの項目名、型、桁数、キー、NULL可否などを整理する表です。</td>
+</tr>
+<tr>
+<td>機能一覧</td>
+<td>システムに含まれる機能を一覧で確認するための表です。見積り前の整理にも使いやすいです。</td>
+</tr>
+<tr>
+<td>画面一覧</td>
+<td>システムで使う画面ID、画面名、利用者、関連機能などをまとめる一覧です。</td>
+</tr>
+<tr>
+<td>画面遷移図</td>
+<td>ログイン後の移動、検索、登録、戻る、エラー時の流れなどを図で整理します。</td>
+</tr>
+<tr>
+<td>帳票一覧</td>
+<td>請求書、一覧表、CSV出力など、システムから出力する帳票を整理します。</td>
+</tr>
+<tr>
+<td>帳票レイアウト（縦）</td>
+<td>縦形式の帳票レイアウトを整理するテンプレートです。</td>
+</tr>
+<tr>
+<td>帳票レイアウト（横）</td>
+<td>横形式の帳票レイアウトを整理するテンプレートです。</td>
+</tr>
+</table>
+<h3><span class="ez-toc-section" id="i-5"></span>詳細設計書テンプレート（Excel）サンプル一式<span class="ez-toc-section-end"></span></h3>
+<p>詳細設計書は、開発担当者が実装しやすいように、処理内容を具体化するための文書です。表紙、更新履歴、フレーム（章立て）を収録しているので、社内フォーマットがまだ固まっていない案件でも使い始めやすいです。</p>
+<div>
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/syousai.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/syousai-400x283.png" width="190" alt="詳細設計書サンプル 表紙｜詳細設計書 テンプレート Excel"></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/syousai2.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/syousai2-400x283.png" width="190" alt="詳細設計書サンプル 更新履歴｜詳細設計書 サンプル excel"></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/syousai3.png"><img decoding="async" class="bd lazyload" data-src="https://exia.co.jp/bizroute/wp-content/uploads/syousai3-400x283.png" width="190" alt="詳細設計書 フレーム章立て例｜システム設計書 テンプレート 構成"></a>
+</div>
+<div style="text-align:center;">
+<a class="template_link" href="https://exia.co.jp/bizroute/wp-content/uploads/syousai_sekkei.zip">詳細設計書テンプレート</a>
+</div>
+<h3><span class="ez-toc-section" id="i-6"></span>テスト仕様書テンプレート（単体・結合・総合テスト用Excel）<span class="ez-toc-section-end"></span></h3>
+<p>単体、結合、総合の3種類をまとめて収録しています。検証内容、実施日、結果、備考を書き残せるので、開発後半の確認作業を整理しやすくなります。</p>
+<div style="text-align:center;">
+<a class="template_link" href="https://exia.co.jp/bizroute/download/test_siyousyo">テスト仕様書テンプレート</a>
+</div>
+<div class="sc_heading bborder tb black"><span class="sc_title">テスト仕様書テンプレートに含まれているExcel</span></div>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:24%;"></th>
+<th style="width:18%;">名称</th>
+<th style="width:58%;">説明</th>
+</tr>
+<tr>
+<td><a href="https://exia.co.jp/bizroute/wp-content/uploads/tantai1.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/tantai1-400x283.png" width="150" alt="単体テスト仕様書 テンプレート Excel｜テストケース見本" class="lazyload" /></a></td>
+<td>単体テスト</td>
+<td>関数、画面部品、モジュール単位で動作を確認するためのテンプレートです。</td>
+</tr>
+<tr>
+<td><a href="https://exia.co.jp/bizroute/wp-content/uploads/ketugou1.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/ketugou1-400x283.png" width="150" alt="結合テスト仕様書 テンプレート Excel｜インターフェース検証例" class="lazyload" /></a></td>
+<td>結合テスト</td>
+<td>画面間、機能間、外部システム連携などの動きを確認するためのテンプレートです。</td>
+</tr>
+<tr>
+<td><a href="https://exia.co.jp/bizroute/wp-content/uploads/sougou1.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/sougou1-400x283.png" width="150" alt="総合テスト仕様書 テンプレート Excel｜シナリオテスト見本" class="lazyload" /></a></td>
+<td>総合テスト</td>
+<td>利用者の操作シナリオに沿って、システム全体の流れを確認するためのテンプレートです。</td>
+</tr>
+</table>
+<h2><span class="ez-toc-section" id="i-7"></span>基本設計書と詳細設計書の違い<span class="ez-toc-section-end"></span></h2>
+<p>基本設計書は、システム全体をどう作るかを整理する文書です。画面、機能、データ、帳票、外部連携などを、利用者や管理側が確認できる粒度でまとめます。</p>
+<p>詳細設計書は、その内容をもとに、開発担当者が実装できるところまで落とし込む文書です。処理内容、入出力、エラー処理、DB項目などを書いていきます。</p>
+<p>現場では、基本設計で決めきれなかった細かい条件を、詳細設計の段階で詰めることもあります。完全に線を引くというより、「誰が読むか」「どこまで決めるか」で分けるイメージです。</p>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:17%;">種類</th>
+<th style="width:43%;">主に書く内容</th>
+<th style="width:40%;">使う場面</th>
+</tr>
+<tr>
+<td>基本設計書</td>
+<td>機能一覧、画面一覧、画面遷移図、帳票一覧、テーブル概要、非機能要件など</td>
+<td>発注者、管理側、PMがシステム全体の作りを確認するとき</td>
+</tr>
+<tr>
+<td>詳細設計書</td>
+<td>モジュール設計、処理ロジック、入出力、エラー処理、DB項目、インターフェース仕様など</td>
+<td>開発担当者が実装前に処理内容を具体化するとき</td>
+</tr>
+</table>
+<h2><span class="ez-toc-section" id="i-8"></span>基本設計書の項目例｜画面一覧・画面遷移図・機能一覧<span class="ez-toc-section-end"></span></h2>
+<p>基本設計書は、最初から全項目をきっちり埋めようとすると重くなります。小規模な社内ツールなら、画面、機能、データの3つを先に固めるだけでも進めやすくなります。</p>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:18%;">項目</th>
+<th style="width:50%;">書く内容</th>
+<th style="width:32%;">使う場面</th>
+</tr>
+<tr>
+<td>表紙</td>
+<td>案件名、文書名、作成日、版数、作成者、承認者など</td>
+<td>社内レビュー、取引先提出</td>
+</tr>
+<tr>
+<td>更新履歴</td>
+<td>変更日、変更内容、変更者、承認者など</td>
+<td>レビュー後の修正管理</td>
+</tr>
+<tr>
+<td>機能一覧</td>
+<td>機能ID、機能名、概要、入力、出力、関連画面など</td>
+<td>開発範囲や見積り前の整理</td>
+</tr>
+<tr>
+<td>画面一覧</td>
+<td>画面ID、画面名、URL、利用者、関連機能、備考など</td>
+<td>画面数が多いWebシステム、業務アプリ開発</td>
+</tr>
+<tr>
+<td>画面遷移図</td>
+<td>ログイン後の移動、検索、登録、戻る、エラー時の流れなど</td>
+<td>画面の抜け漏れをレビューしたいとき</td>
+</tr>
+<tr>
+<td>テーブル定義書</td>
+<td>テーブル名、項目名、型、桁数、NULL可否、キー、備考など</td>
+<td>DB設計、詳細設計に進む前の整理</td>
+</tr>
+<tr>
+<td>帳票一覧</td>
+<td>帳票名、出力条件、出力形式、出力項目、利用部署など</td>
+<td>請求書、一覧表、CSV出力がある案件</td>
+</tr>
+</table>
+<h2><span class="ez-toc-section" id="i-9"></span>システム設計書テンプレートとして使う場合<span class="ez-toc-section-end"></span></h2>
+<p>社内では「基本設計書」ではなく「システム設計書」という名前で提出することもあります。中身は基本設計書に近く、システム構成、機能一覧、画面一覧、データ設計、帳票、運用まわりをまとめる形が多いです。</p>
+<p>小さな改修案件では、基本設計書と詳細設計書を分けず、1つのシステム設計書にまとめた方が楽なこともあります。たとえば、既存の販売管理システムに検索条件を1つ追加するような案件なら、全体構成を厚く書くより、対象画面と処理内容を絞って書いた方が読みやすいです。</p>
+<h2><span class="ez-toc-section" id="i-10"></span>詳細設計書テンプレートに入れる項目例<span class="ez-toc-section-end"></span></h2>
+<p>詳細設計書は、開発者が「この内容なら実装できる」と判断できる粒度まで書く文書です。ただし、案件によってはすべての項目を使うわけではありません。既存システムの軽微な修正なら、変更対象の処理だけに絞ることもあります。</p>
+<ul style="line-height:1.8;">
+<li>モジュール設計（入出力、前提条件、処理内容、戻り値など）</li>
+<li>インターフェース定義（I/Oフォーマット、連携先、エラーコードなど）</li>
+<li>DBスキーマ詳細（項目、型、桁数、インデックス、制約など）</li>
+<li>例外処理（リトライ、タイムアウト、エラー表示、ログ出力など）</li>
+<li>テスト観点（単体テスト、結合テストで確認する内容）</li>
+</ul>
+<h2><span class="ez-toc-section" id="i-11"></span>このページの仕様書テンプレートについて<span class="ez-toc-section-end"></span></h2>
+<p>ここで紹介している仕様書テンプレートは、製品仕様書や営業用の仕様書ではなく、システム開発で使う設計・テスト用のExcelテンプレートです。</p>
+<p>機能、画面、データ、帳票、テスト項目などを整理する用途に向いています。製品の寸法やスペックをまとめる「製品仕様書」とは少し違うので、検索して来た方はここだけ先に見ておくと迷いにくいです。</p>
+<h2><span class="ez-toc-section" id="i-12"></span>テンプレートを使う前に決めておくこと<span class="ez-toc-section-end"></span></h2>
+<p>テンプレートがあると、章立てや表の形をゼロから作らずに済みます。ただ、使う前に案件の範囲だけは軽く決めておいた方がスムーズです。ここを決めずに書き始めると、あとで「この画面も対象でしたっけ？」となりやすいです。</p>
+<table style="width:100%;font-size:90%;">
+<tr>
+<th style="width:28%;">使う前に決めること</th>
+<th style="width:72%;">実務での考え方</th>
+</tr>
+<tr>
+<td>対象範囲</td>
+<td>新規開発なのか、既存システムの改修なのかを先に分けます。改修なら対象画面、対象機能を絞っておくと楽です。</td>
+</tr>
+<tr>
+<td>読む人</td>
+<td>管理側に見せる文書なら全体像を厚めに、開発者向けなら処理内容やDB項目を厚めにします。</td>
+</tr>
+<tr>
+<td>省略する項目</td>
+<td>小規模案件では、帳票や外部連携がないこともあります。使わない項目は無理に残さず、削った方が読みやすいです。</td>
+</tr>
+<tr>
+<td>更新ルール</td>
+<td>レビュー後に誰が修正し、誰が承認するのかを決めておくと、更新履歴があいまいになりにくいです。</td>
+</tr>
+</table>
+<h2><span class="ez-toc-section" id="i-13"></span>システム開発の初期に役立つテンプレート<span class="ez-toc-section-end"></span></h2>
+<p>設計書だけでは、プロジェクト全体の進行は見えにくいです。体制図や議事録も一緒にそろえておくと、後から入ったメンバーにも状況を共有しやすくなります。</p>
+<h3><span class="ez-toc-section" id="i-14"></span>体制図テンプレート（プロジェクト組織の可視化）<span class="ez-toc-section-end"></span></h3>
+<p>プロジェクトを始める前に、誰がどの役割を担当するのかを図にしておくと、あとから参加した人にも状況を伝えやすくなります。担当の境目があいまいなまま進むと、地味に手戻りが増えます。最初に1枚作っておくと、朝の定例でも説明が早いです。</p>
+<div>
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/ochart01s.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/ochart01s-400x283.png" width="190" alt="体制図テンプレート サンプル｜プロジェクト体制の例" class="lazyload" /></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/ochart02s.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/ochart02s-400x283.png" width="190" alt="体制図テンプレート 見本｜部門横断構成の例" class="lazyload" /></a> <a href="https://exia.co.jp/bizroute/wp-content/uploads/ochart04s.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/ochart04s-400x283.png" width="190" alt="体制図テンプレート 例｜外部委託を含む構成" class="lazyload" /></a>
+</div>
+<div style="text-align:center;">
+<a style="font-weight:bold;font-size:110%;text-decoration:underline;" href="https://exia.co.jp/bizroute/sosikizu_template.html">体制図テンプレート</a>
+</div>
+<h3><span class="ez-toc-section" id="i-15"></span>議事録テンプレート（会議記録用ひな形）<span class="ez-toc-section-end"></span></h3>
+<p>システム開発は、最初の要件定義やヒアリングだけで全部が決まることはほとんどありません。開発中も何度も打ち合わせが入るので、決定事項や宿題を残しておける議事録はかなり使います。あとで「言った・言わない」になりやすい場面ほど、効いてきます。</p>
+<div>
+<img decoding="async" style="border:1px solid #ddd;" data-src="https://exia.co.jp/bizroute/wp-content/uploads/gijiroku04s.png" width="190" alt="議事録テンプレート 例｜決定事項とアクションの記録" class="lazyload" /> <img decoding="async" style="border:1px solid #ddd;" data-src="https://exia.co.jp/bizroute/wp-content/uploads/gijiroku01s.png" width="190" alt="議事録テンプレート 見本｜出席者・議題・要点の書き方" class="lazyload" /> <img decoding="async" style="border:1px solid #ddd;" data-src="https://exia.co.jp/bizroute/wp-content/uploads/gijiroku03s.png" width="190" alt="議事録テンプレート サンプル｜タスクと期限管理の例" class="lazyload" />
+</div>
+<div style="text-align:center;">
+<a class="template_link" href="https://exia.co.jp/bizroute/gijiroku_template.html">議事録テンプレート</a>
+</div>
+<h2><span class="ez-toc-section" id="i-16"></span>スケジュール管理・タスク管理テンプレート（Excel）<span class="ez-toc-section-end"></span></h2>
+<p>設計を始める前に、いつまでに何を終えるかをざっくり置いておくと、後半の詰まりを減らせます。最初の見積りは外れることもありますが、作業を分けておくだけでも調整しやすくなります。</p>
+<h3><span class="ez-toc-section" id="i-17"></span>WBSテンプレート（業務分解・工数見積）<span class="ez-toc-section-end"></span></h3>
+<p>WBSは、プロジェクトを始める前に全体像と工数感をつかむために使います。設計、開発、テスト、レビューを分けておくと、どこで遅れているのか見えやすいです。</p>
+<div style="text-align:center;">
+<img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/wbs01s-400x283.png" width="400" alt="WBSテンプレート Excel｜タスク分解と工数見積のサンプル" class="lazyload" /><br />
+<a class="template_link" href="https://exia.co.jp/bizroute/wbs.html">WBSテンプレート</a>
+</div>
+<h3><span class="ez-toc-section" id="i-18"></span>ガントチャートテンプレート（進捗・納期管理）<span class="ez-toc-section-end"></span></h3>
+<p>ガントチャートは、プロジェクトのスケジュールや進捗を見渡すために使います。納期が詰まっている案件ほど、全体の流れが見えていないと後半で一気に苦しくなりがちです。早い段階で引いておくと、担当者同士の調整もしやすくなります。</p>
+<div style="text-align:center;">
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/wbs02-01.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/wbs02-01s-400x283.png" width="400" alt="ガントチャートテンプレート Excel｜スケジュール管理の見本" class="lazyload" /></a><br />
+<a class="template_link" href="https://exia.co.jp/bizroute/ganttchart_template.html">ガントチャートテンプレート</a>
+</div>
+<h2><span class="ez-toc-section" id="i-19"></span>コミュニケーション管理テンプレート（Excel）<span class="ez-toc-section-end"></span></h2>
+<p>システム開発では、質問、課題、確認待ちがメールやチャットに散らばりやすいです。小さな案件でも、一覧にしておくと後から探す手間がかなり減ります。</p>
+<h3><span class="ez-toc-section" id="i-20"></span>Q&Aシートテンプレート（質問と回答の管理）<span class="ez-toc-section-end"></span></h3>
+<p>質問と回答をまとめておけるシートがあると、同じ質問を何度も投げずに済みます。メンバー同士でも内容を共有しやすくなりますし、メールの中に埋もれて後から探せなくなる、あの感じも減らせます。</p>
+<div style="text-align:center;">
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/qasheet01s.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/qasheet01s-400x283.png" width="400" alt="Q&Aシートテンプレート Excel｜質問と回答の管理例" class="lazyload" /></a><br />
+<a class="template_link" href="https://exia.co.jp/bizroute/qasheet_template.html">Ｑ＆Ａシートテンプレート</a>
+</div>
+<h3><span class="ez-toc-section" id="i-21"></span>課題管理表テンプレート（問題・対応状況の記録）<span class="ez-toc-section-end"></span></h3>
+<p>Q&Aシートが顧客との確認や質問のやり取りを整理するものだとすると、課題管理表は、メンバー内で起きている問題や対応状況を追っていくための表です。リリース前の夕方になって未対応の課題が見つかるとかなり焦るので、早めに一覧化しておくと安心です。</p>
+<div style="text-align:center;">
+<a href="https://exia.co.jp/bizroute/wp-content/uploads/issuelist01s.png"><img decoding="async" data-src="https://exia.co.jp/bizroute/wp-content/uploads/issuelist01s-400x283.png" width="400" alt="課題管理表テンプレート Excel｜課題・対応状況の記録例" class="lazyload" /></a><br />
+<a class="template_link" href="https://exia.co.jp/bizroute/issuelist_template.html">課題管理表テンプレート</a>
+</div>
+<h2 id="fail"><span class="ez-toc-section" id="i-22"></span>よくある失敗と直し方（設計書作成編）<span class="ez-toc-section-end"></span></h2>
+<p>設計書は、作り始めると細かいところで詰まります。実際に多いのは、内容そのものよりも、用語や更新履歴、図表の参照がバラバラになるケースです。</p>
+<ul style="line-height:1.8;">
+<li><strong>章立てが案件ごとにばらつく</strong> → 章番号と見出しの付け方をそろえておくと、あとで差分を追いやすくなります。</li>
+<li><strong>用語が統一されず、認識がずれる</strong> → 冒頭に用語集を置いて、レビュー前に言葉をそろえておくと混乱が減ります。</li>
+<li><strong>図と表が本文から参照されていない</strong> → 図番や表番を付けて、本文側からたどれるようにしておくと読みやすいです。</li>
+<li><strong>更新履歴があいまいなまま残る</strong> → 変更理由、起票者、承認者まで書く形にしておくと、後から見返したときに助かります。</li>
+<li><strong>全部の項目を埋めようとして進まない</strong> → 小規模案件では、使わない章を消しても問題ありません。対象外の項目を残すと、読む側も迷います。</li>
+</ul>
+<h2 id="faq"><span class="ez-toc-section" id="i-23"></span>FAQ｜設計書テンプレートのよくある質問<span class="ez-toc-section-end"></span></h2>
+<div class="faq-box">
+<div class="faq-question">Q. 基本設計書サンプルは、そのまま実案件で使えますか？</div>
+<div class="faq-answer">A. 基本の構成はそのまま使えます。実案件では、プロジェクトの内容に合わせて非機能要件、セキュリティ、外部連携、運用項目などを足していく形になります。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. 詳細設計書テンプレートには何が含まれていますか？</div>
+<div class="faq-answer">A. 表紙、更新履歴、フレーム（章立て）を収録しています。案件に合わせて、モジュール設計、インターフェース定義、DB項目、例外処理などを追加して使ってください。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. 基本設計書と詳細設計書の違いは何ですか？</div>
+<div class="faq-answer">A. 基本設計書は、システム全体の構成や機能の大枠を整理する文書です。詳細設計書は、その内容をもとに、実装に近いレベルまで仕様を具体化する文書です。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. システム設計書として使えますか？</div>
+<div class="faq-answer">A. 使えます。社内で「システム設計書」という名称にしている場合は、基本設計書テンプレートをベースに、画面、機能、データ、帳票、運用項目を調整すると使いやすいです。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. 要件定義にも使えますか？</div>
+<div class="faq-answer">A. 要件定義では、業務フロー、利用者、対象範囲、非機能要件などの整理が中心になります。要件定義書テンプレートを使い、設計に進む段階で基本設計書へ展開する流れが扱いやすいです。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. ダウンロードしたExcelテンプレートはカスタマイズできますか？</div>
+<div class="faq-answer">A. はい。レイアウトや章立ては自由に調整できます。プロジェクトの進め方や社内フォーマットに合わせて、列名や項目を変えて使ってください。</div>
+</div>
+<div class="faq-box">
+<div class="faq-question">Q. 無料で商用利用しても問題ありませんか？</div>
+<div class="faq-answer">A. 商用利用は可能です。ただし、テンプレートそのものの再配布や販売はご遠慮ください。</div>
+</div>
+<div class="related-links-box" style="margin:30px 0; padding:20px; background:#f9f9f9; border-left:5px solid #2f6fab; border-radius:8px;">
+<div style="font-size:18px; font-weight:bold; margin-bottom:12px;">関連リンク</div>
+<ul style="list-style:none; padding-left:0; line-height:1.8;">
+<li>▶ <a href="https://exia.co.jp/bizroute/youkenteigi.html" style="color:#2a5ca4; text-decoration:underline;">要件定義書テンプレート（Excel）サンプル付き</a></li>
+<li>▶ <a href="https://exia.co.jp/bizroute/gijiroku_template.html" style="color:#2a5ca4; text-decoration:underline;">議事録テンプレート（会議記録用ひな形）</a></li>
+<li>▶ <a href="https://exia.co.jp/bizroute/wbs.html" style="color:#2a5ca4; text-decoration:underline;">WBSテンプレート（スケジュール・タスク管理）</a></li>
+<li>▶ <a href="https://exia.co.jp/bizroute/ganttchart_template.html" style="color:#2a5ca4; text-decoration:underline;">ガントチャートテンプレート（進捗管理表）</a></li>
+<li>▶ <a href="https://exia.co.jp/bizroute/qasheet_template.html" style="color:#2a5ca4; text-decoration:underline;">Q&amp;Aシートテンプレート（質問・回答管理）</a></li>
+<li>▶ <a href="https://exia.co.jp/bizroute/issuelist_template.html" style="color:#2a5ca4; text-decoration:underline;">課題管理表テンプレート（問題・対応状況管理）</a></li>
+</ul>
+</div>
+<h2><span class="ez-toc-section" id="i-24"></span>まとめ｜基本設計書・詳細設計書テンプレートの使い方<span class="ez-toc-section-end"></span></h2>
+<p>今回は、システム開発で使う基本設計書、詳細設計書、要件定義書、テスト仕様書のExcelテンプレートを紹介しました。</p>
+<p>基本設計書は、画面、機能、データ、帳票などを整理して、関係者が全体像を確認するために使います。詳細設計書は、そこから一歩進めて、開発担当者が実装しやすいように処理内容を具体化する文書です。</p>
+<p>白紙から作ると、章立てや表の形だけで時間を使ってしまいます。テンプレートを使うと、最初の形が決まっているので、案件ごとの中身に集中しやすくなります。不要な項目は削り、足りない項目は追加しながら、自社の進め方に合わせて調整してみてください。</p>
+<h2 id="author"><span class="ez-toc-section" id="i-25"></span>作成・監修体制<span class="ez-toc-section-end"></span></h2>
+<ul style="line-height:1.8;">
+<li>作成：業務文書・帳票設計の実務に関わってきた編集チーム</li>
+<li>レビュー：社内SEやPMの経験者が、構成や項目の細かさを確認</li>
+<li>更新方針：主要な変更やガイドライン改定があった際に、内容を見直します</li>
+</ul>
+<div id="advads-2613717173" class="advads-2 advads-entity-placement" style="height: 400px;"><script async
+     crossorigin="anonymous" data-type="lazy" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7718566261169673"></script>
+<!-- ExiaBizroute_mobile_CLS -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7718566261169673"
+     data-ad-slot="4271552303"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>									</div>
+
+									
+									<div class="bottom_ad clearfix">
+																						
+																		</div>
+
+									    
+    									  <div class="post_footer_author_title">この記事を書いた人</div>
+  <div class="post_footer_author clearfix">
+  <div class="post_author_user clearfix vcard author">
+    <div class="post_thum"><img alt='ビズルート編集部（山中恵）' src='https://secure.gravatar.com/avatar/c48bbb3be3775e8fb775f4a52beabbbd1f8e013c065d68595ce8f752c16ff759?s=100&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/c48bbb3be3775e8fb775f4a52beabbbd1f8e013c065d68595ce8f752c16ff759?s=200&#038;d=mm&#038;r=g 2x' class='avatar avatar-100 photo' height='100' width='100' decoding='async'/>
+          <ul class="profile_sns">
+        <li><a class="facebook" href="https://www.facebook.com/bizrouteweb/"><i class="fa fa-facebook"></i></a></li><li><a class="twitter" href="https://twitter.com/SkF8l6qRmB2GPIE"><svg width="1200" height="1227" viewbox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                </svg></a></li><li><a class="sns" href="https://exia.co.jp/bizroute/team" target="_blank"><i class="fa fa-share" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="post_author_user_meta">
+      <div class="post-author fn"><a href="https://exia.co.jp/bizroute/author/writer">ビズルート編集部（山中恵）</a></div>
+      <div class="post-description">中小企業の現場で実際に求められる業務効率化を支援する、株式会社エクシアのWebメディアチームです。
+
+私たちは20年以上にわたり、ITツールの導入支援や書類作成の自動化に取り組んできました。  <br><br>
+
+その経験を活かし、「役立つテンプレート」や「書類作成のコツ」をわかりやすく紹介しています。<br><br>  
+
+現場で培った実務知識をもとに、中小企業や個人事業主の方々が日々の業務を効率化できるようサポートしています。  
+<a href="https://exia.co.jp/bizroute/team">著者プロフィール詳細</a></div>
+    </div>
+  </div>
+      </div>
+							</section>
+							<footer class="article_footer">
+								<!-- コメント -->
+																<!-- 関連キーワード -->
+								
+								<!-- 関連記事 -->
+								<div class="single_title"><span class="cat-link"><a href="https://exia.co.jp/bizroute/category/products" rel="category tag">開発・設計</a></span>の関連記事</div>
+<ul class="newpost_list">
+			<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/flow_template.html" title="業務フロー図テンプレート（Excel無料）｜作り方・サンプル付き" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="128" height="84" alt="業務フロー図テンプレート（Excel無料）｜作り方・サンプル付き" loading="lazy" data-src="https://exia.co.jp/bizroute/wp-content/uploads/flow-template-eye.png" class="lazyload">		</figure>
+		<div class="meta">
+		<div class="title">業務フロー図テンプレート（Excel無料）｜作り方・サンプル付き</div>
+		<time class="date" datetime="2026-08-31">
+		2026年8月31日		</time>
+		</div>
+		</a>
+		</li>
+				<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/network_icon.html" title="ネットワーク構成図テンプレート無料｜PPTサンプルとアイコン集" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="96" height="96" alt="ネットワーク構成図テンプレート無料｜PPTサンプルとアイコン集" loading="lazy" data-src="https://exia.co.jp/bizroute/wp-content/uploads/network_eye-150x150.png" class="lazyload">		</figure>
+		<div class="meta">
+		<div class="title">ネットワーク構成図テンプレート無料｜PPTサンプルとアイコン集</div>
+		<time class="date" datetime="2026-07-31">
+		2026年7月31日		</time>
+		</div>
+		</a>
+		</li>
+				<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/qasheet_template.html" title="質問表・QA表テンプレート無料｜Excelで使えるQ&#038;Aシート" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="128" height="84" alt="質問表・QA表テンプレート無料｜Excelで使えるQ&#038;Aシート" loading="lazy" data-src="https://exia.co.jp/bizroute/wp-content/uploads/qasheet_template_eye.png" class="lazyload">		</figure>
+		<div class="meta">
+		<div class="title">質問表・QA表テンプレート無料｜Excelで使えるQ&#038;Aシート</div>
+		<time class="date" datetime="2026-05-27">
+		2026年5月27日		</time>
+		</div>
+		</a>
+		</li>
+				<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/youkenteigi.html" title="要件定義書テンプレート（Word）サンプルあり｜無料の完成見本・例文" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="128" height="84" alt="要件定義書テンプレート（Word）サンプルあり｜無料の完成見本・例文" loading="lazy" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youkenteigi_template_eye.png" class="lazyload">		</figure>
+		<div class="meta">
+		<div class="title">要件定義書テンプレート（Word）サンプルあり｜無料の完成見本・例文</div>
+		<time class="date" datetime="2026-05-11">
+		2026年5月11日		</time>
+		</div>
+		</a>
+		</li>
+				<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/youken.html" title="要件定義書テンプレート【無料】Word・Excel・PDF｜完成サンプル付き" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="128" height="84" alt="要件定義書テンプレート【無料】Word・Excel・PDF｜完成サンプル付き" loading="lazy" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youken-total-eye.png" class="lazyload">		</figure>
+		<div class="meta">
+		<div class="title">要件定義書テンプレート【無料】Word・Excel・PDF｜完成サンプル付き</div>
+		<time class="date" datetime="2026-05-11">
+		2026年5月11日		</time>
+		</div>
+		</a>
+		</li>
+				<li class="post_list_wrap clearfix hvr-fade-post">
+		<a class="clearfix" href="https://exia.co.jp/bizroute/download/youken01" title="要件定義書サンプルExcel無料｜機能一覧付きテンプレート" rel="bookmark">
+		<figure class="post-box-thumbnail__wrap">
+		<img src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" width="842" height="595" data-src="https://exia.co.jp/bizroute/wp-content/uploads/youken1.png" class="lazyload" loading="lazy">		</figure>
+		<div class="meta">
+		<div class="title">要件定義書サンプルExcel無料｜機能一覧付きテンプレート</div>
+		<time class="date" datetime="2026-05-11">
+		2026年5月11日		</time>
+		</div>
+		</a>
+		</li>
+		</ul>
+															</footer>
+						</article>
+					</div>
+					<!-- CTA -->
+										<!-- navigation -->
+					
+					
+						 
+ 										<div class="post-sub">
+						<!-- bigshare -->
+						<!-- rabdom_posts(bottom) -->
+																	</div>
+									</main>
+
+		<!-- /main -->
+			<!-- sidebar -->
+	<div id="sidebar" role="complementary">
+		<div class="sidebar_content">
+						<div id="search-2" class="widget widget_search"><form method="get" class="searchform" action="https://exia.co.jp/bizroute/" role="search">
+	<input type="text" placeholder="検索" name="s" class="s">
+	<input type="submit" class="searchsubmit" value="">
+</form></div>        <div id="diver_widget_profile-2" class="widget widget_diver_widget_profile">            <div class="widgettitle">Bizrouteとは</div>            <div class="diver_widget_profile clearfix">
+                            <div class="clearfix coverimg lazyload no" >
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAN3d3QAAACwAAAAAAQABAAACAkQBADs=" data-src="https://exia.co.jp/bizroute/wp-content/uploads/logo-main.jpg" alt="userimg" />
+                </div>
+                            <div class="img_meta">
+                    <div class="name"></div>
+                    <ul class="profile_sns">
+
+                    <li><a class="facebook" href="https://www.facebook.com/bizrouteweb/"><i class="fa fa-facebook"></i></a></li><li><a class="twitter" href="https://twitter.com/SkF8l6qRmB2GPIE"><svg width="1200" height="1227" viewbox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                </svg></a></li><li><a class="instagram" href="https://www.instagram.com/bizrouteweb/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                  </div>
+              <div class="meta">
+                bizroute（ビズルート）は経理、総務、営業、システム開発などのビジネスで必要なテンプレートや、効率よく仕事をこなすためのノウハウを随時発信しています。              </div>
+              <div class="button"><a style="background:#eee;color: #333;" href="https://exia.co.jp/bizroute/toi.html">お問い合わせ</a></div>            </div>
+        </div>        <div id="categories-5" class="widget widget_categories"><div class="widgettitle">カテゴリ</div>
+			<ul>
+					<li class="cat-item cat-item-9"><a href="https://exia.co.jp/bizroute/category/knowhow">ビジネスノウハウ</a>
+</li>
+	<li class="cat-item cat-item-72"><a href="https://exia.co.jp/bizroute/category/presentation">プレゼン資料・図解</a>
+</li>
+	<li class="cat-item cat-item-77"><a href="https://exia.co.jp/bizroute/category/trouble">ミス・トラブル対応</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="https://exia.co.jp/bizroute/category/human">人事・労務</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="https://exia.co.jp/bizroute/category/business">会社・事業運営</a>
+</li>
+	<li class="cat-item cat-item-62"><a href="https://exia.co.jp/bizroute/category/procedure">会社手続き・証明</a>
+</li>
+	<li class="cat-item cat-item-60"><a href="https://exia.co.jp/bizroute/category/tools">便利ツール</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="https://exia.co.jp/bizroute/category/personal">個人・家庭</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://exia.co.jp/bizroute/borrow">借用・受領</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="https://exia.co.jp/bizroute/category/roster">名簿・連絡</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="https://exia.co.jp/bizroute/category/sales">営業・提案</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="https://exia.co.jp/bizroute/category/projects">業務管理</a>
+</li>
+	<li class="cat-item cat-item-66"><a href="https://exia.co.jp/bizroute/category/legal">法務・契約</a>
+</li>
+	<li class="cat-item cat-item-70"><a href="https://exia.co.jp/bizroute/category/accounting">経理・会計</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="https://exia.co.jp/bizroute/category/data">統計・データ</a>
+</li>
+	<li class="cat-item cat-item-67"><a href="https://exia.co.jp/bizroute/category/admin">総務・社内運用</a>
+</li>
+	<li class="cat-item cat-item-69"><a href="https://exia.co.jp/bizroute/category/purchasing">販売・購買</a>
+</li>
+	<li class="cat-item cat-item-74"><a href="https://exia.co.jp/bizroute/category/products">開発・設計</a>
+</li>
+			</ul>
+
+			</div>            <div class="clearfix diver_widget_adarea">
+                <div class="diver_widget_adlabel"></div>
+                                    <div class="diver_ad"><script async
+     crossorigin="anonymous" data-type="lazy" data-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7718566261169673"></script>
+<!-- ExiaBizroute_SideBar -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7718566261169673"
+     data-ad-slot="6920916310"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+                            </div>
+            						<div id="fix_sidebar">
+																			</div>
+		</div>
+	</div>
+	<!-- /sidebar -->
+	</div>
+</div>
+				</div>
+		<!-- /container -->
+		
+			<!-- Big footer -->
+				<div id="bigfooter">
+		<div class="bigfooter_wrap clearfix">
+			<div class="bigfooter_colomn col3">
+				<div id="custom_html-3" class="widget_text widget bigfooter_col widget_custom_html"><div class="textwidget custom-html-widget"><div style="margin:0 0 10px 0;"><a style="font-size:110%" href="https://exia.co.jp/bizroute/toi.html">お問い合わせ</a></div>
+<div style="margin:0 0 10px 0"><a style="font-size:110%" href="https://exia.co.jp/bizroute/privacy.html">プライバシーポリシー</a></div>
+<div style="margin:0 0 10px 0"><a style="font-size:110%" href="https://exia.co.jp/bizroute/menseki.html">免責事項</a></div>
+<div style="margin:0 0 10px 0">
+	<a style="font-size:110%" href="https://exia.co.jp/bizroute/sitemapx.html">サイトマップ</a>
+</div>
+</div></div>			</div>
+			<div class="bigfooter_colomn col3">
+				<div id="custom_html-6" class="widget_text widget bigfooter_col widget_custom_html"><div class="textwidget custom-html-widget"><div style="margin:0 0 10px 0">
+	<a style="font-size:110%" href="https://exia.co.jp/bizroute/kiyaku.html">テンプレートの利用に関して</a>
+</div>
+<div style="margin:0 0 10px 0"><a style="font-size:110%" href="https://exia.co.jp/bizroute/corporate.html">運営会社</a></div>
+<div style="margin:0 0 10px 0"><a style="font-size:110%" href="https://exia.co.jp/bizroute/team">運営者プロフィール</a></div>
+<div style="margin:0 0 10px 0"><a style="font-size:110%" href="https://exia.co.jp/bizroute/hozon-site.html">参考リンク</a></div></div></div>			</div>
+						<div class="bigfooter_colomn col3">
+							</div>
+		</div>
+	</div>
+			<!-- /Big footer -->
+
+			<!-- footer -->
+			<footer id="footer">
+				<div class="footer_content clearfix">
+					<nav class="footer_navi" role="navigation">
+											</nav>
+					<div id="copyright">2025 Bizroute All Rights Reserved.</div>
+				</div>
+			</footer>
+			<!-- /footer -->
+						<!-- フッターmenu -->
+						<!-- フッターCTA -->
+					
+
+		<div class="drawer-overlay"></div>
+		<div class="drawer-nav"></div>
+
+				<div id="header_search" class="lity-hide">
+					</div>
+		
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/bizroute/*"},{"not":{"href_matches":["/bizroute/wp-*.php","/bizroute/wp-admin/*","/bizroute/wp-content/uploads/*","/bizroute/wp-content/*","/bizroute/wp-content/plugins/*","/bizroute/wp-content/themes/diver_child/*","/bizroute/wp-content/themes/diver/*","/bizroute/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style>@media screen and (max-width:599px){.grid_post-box{width:50% !important;}}</style><style>.appeal_box,#share_plz,.hentry, #single-main .post-sub,#breadcrumb,#sidebar .widget,.navigation,.wrap-post-title,.pickup-cat-wrap,.maintop-widget, .mainbottom-widget,.post-box-contents,#main-wrap .pickup_post_list,.sticky-post-box,.p-entry__tw-follow,.p-entry__push,.catpage_content_wrap,#cta,h1.page_title{-webkit-box-shadow:0 0 5px #ddd;-moz-box-shadow:0 0 5px #ddd;box-shadow:0 0 5px #ddd;-webkit-box-shadow:0 0 0 5px rgba(150,150,150,.2);-moz-box-shadow:0 0 5px rgba(150,150,150,.2);box-shadow:0 0 5px rgba(150,150,150,.2);}</style><style>.newlabel {display:inline-block;position:absolute;margin:0;text-align:center;font-size:13px;color:#fff;font-size:13px;background:#f66;top:0;}.newlabel span{color:#fff;background:#f66;}.widget_post_list .newlabel:before{border-left-color:#f66;}.pickup-cat-img .newlabel::before {content:"";top:0;left:0;border-bottom:40px solid transparent;border-left:40px solid #f66;position:absolute;}.pickup-cat-img .newlabel span{font-size:11px;display:block;top:6px;transform:rotate(-45deg);left:0px;position:absolute;z-index:101;background:none;}@media screen and (max-width:768px){.newlabel span{font-size:.6em;}}</style><style>.post-box-contents .newlable{top:0px;}.post-box-contents .newlabel::before {content:"";top:0;left:0;border-bottom:4em solid transparent;border-left:4em solid #f66;position:absolute;}.post-box-contents .newlabel span{white-space:nowrap;display:block;top:8px;transform:rotate(-45deg);left:2px;position:absolute;z-index:101;background:none;}@media screen and (max-width:768px){.post-box-contents .newlabel::before{border-bottom:3em solid transparent;border-left:3em solid #f66;}.post-box-contents .newlabel span{top:7px;left:1px;}}</style><style>@media screen and (min-width:560px){.grid_post-box:hover .grid_post_thumbnail img,.post-box:hover .post_thumbnail img{-webkit-transform:scale(1.2);transform:scale(1.2);}}</style><style>#page-top a{background:rgba(0,0,0,0.6);color:#fff;}</style><style>.wpp-list li:nth-child(1):after,.diver_popular_posts li.widget_post_list:nth-child(1):after {background:rgb(255, 230, 88);}.wpp-list li:nth-child(2):after,.diver_popular_posts li.widget_post_list:nth-child(2):after {background:#ccc;}.wpp-list li:nth-child(3):after,.diver_popular_posts li.widget_post_list:nth-child(3):after {background:rgba(255, 121, 37, 0.8);}.wpp-list li:after{content:counter(wpp-ranking, decimal);counter-increment:wpp-ranking;}.diver_popular_posts li.widget_post_list:after {content:counter(dpp-ranking, decimal);counter-increment:dpp-ranking;}.wpp-list li:after,.diver_popular_posts li.widget_post_list:after {line-height:1;position:absolute;padding:3px 6px;left:4px;top:4px;background:#313131;color:#fff;font-size:1em;border-radius:50%;font-weight:bold;z-index:}</style><style>.wrap-post-title,.wrap-post-title a{color:#333;text-decoration:none;}</style> <style>.wrap-post-title,.widget .wrap-post-title{background:#fff;}</style><style>.widget.widget_block .wp-block-group h2:first-child,.widget.widget_block .wp-block-group h3:first-child,.widgettitle{color:#fff;}</style> <style>.widget.widget_block .wp-block-group h2:first-child,.widget.widget_block .wp-block-group h3:first-child,.widgettitle{background:#004363;}</style><style>.content{font-size:15px;line-height:1.8em;}:where(.content) p:where(:not([style]):not(:empty)),:where(.content) div:where(:not([class]):not([style]):not(:empty)) {margin:0 0 1em;}:where(.content) p:where(:not([class]):not([style]):empty),:where(.content) div:where(:not([class]):not([style]):empty){padding-bottom:1em;margin:0;}:where(.content) ul,:where(.content) ol,:where(.content) table,:where(.content) dl{margin-bottom:1em;}.single_thumbnail img{max-height:500px;}@media screen and (max-width:768px){.content{font-size:15px}}</style><style>.diver_firstview_simple.stripe.length{background-image:linear-gradient(-90deg,transparent 25%,#fff 25%, #fff 50%,transparent 50%, transparent 75%,#fff 75%, #fff);background-size:80px 50px;}.diver_firstview_simple.stripe.slant{background-image:linear-gradient(-45deg,transparent 25%,#fff 25%, #fff 50%,transparent 50%, transparent 75%,#fff 75%, #fff);background-size:50px 50px;}.diver_firstview_simple.stripe.vertical{background-image:linear-gradient(0deg,transparent 25%,#fff 25%, #fff 50%,transparent 50%, transparent 75%,#fff 75%, #fff);background-size:50px 80px;}.diver_firstview_simple.dot {background-image:radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);background-position:0 0, 10px 10px;background-size:20px 20px;}.diver_firstview_simple.tile.length,.diver_firstview_simple.tile.vertical{background-image:linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);background-position:5px 5px ,40px 40px;background-size:70px 70px;}.diver_firstview_simple.tile.slant{background-image:linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(-45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);background-size:50px 50px; background-position:25px;}.diver_firstview_simple.grad.length{background:linear-gradient(#fff,#759ab2);}.diver_firstview_simple.grad.vertical{background:linear-gradient(-90deg,#fff,#759ab2);}.diver_firstview_simple.grad.slant{background:linear-gradient(-45deg, #fff,#759ab2);}.content a{text-decoration:underline;}</style><style>.nav_in_btn li.nav_in_btn_list_1 a{background:#ffffff;color:#0f6dbf;}.nav_in_btn li.nav_in_btn_list_2 a{background:#ffffff;color:#0f6dbf;}.nav_in_btn li.nav_in_btn_list_3 a{background:#ffffff;color:#0f6dbf;}.nav_in_btn li.nav_in_btn_list_4 a{background:#ffffff;color:#0f6dbf;}.nav_in_btn ul li {border-left:solid 1px #d4d4d4;}.nav_in_btn ul li:last-child {border-right:solid 1px #d4d4d4;}.nav_in_btn ul li i{font-size:30px;}.d_sp .nav_in_btn ul li{width:100%;}</style><script type="text/javascript" id="flying-scripts">const loadScriptsTimer=setTimeout(loadScripts,4*1000);const userInteractionEvents=['click', 'mousemove', 'keydown', 'touchstart', 'touchmove', 'wheel'];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){loadScripts();clearTimeout(loadScriptsTimer);userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}
+function loadScripts(){document.querySelectorAll("script[data-type='lazy']").forEach(function(elem){elem.setAttribute("src",elem.getAttribute("data-src"))})}</script>
+    <script id="eztoc-scroll-scriptjs-js-extra">
+var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":"","add_self_reference_link":""};
+//# sourceURL=eztoc-scroll-scriptjs-js-extra
+</script>
+<script id="eztoc-scroll-scriptjs-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.86&#038;theme=6.1.21"></script>
+<script id="eztoc-js-cookie-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1&#038;theme=6.1.21"></script>
+<script id="eztoc-jquery-sticky-kit-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2&#038;theme=6.1.21"></script>
+<script id="eztoc-js-js-extra">
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"1","scroll_offset":"30","fallbackIcon":"\u003Cspan class=\"\"\u003E\u003Cspan class=\"eztoc-hide\" style=\"display:none;\"\u003EToggle\u003C/span\u003E\u003Cspan class=\"ez-toc-icon-toggle-span\"\u003E\u003Csvg style=\"fill: #999;color:#999\" xmlns=\"http://www.w3.org/2000/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"\u003E\u003Cpath d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"\u003E\u003C/path\u003E\u003C/svg\u003E\u003Csvg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http://www.w3.org/2000/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"\u003E\u003Cpath d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"/\u003E\u003C/svg\u003E\u003C/span\u003E\u003C/span\u003E","visibility_hide_by_device":"1","chamomile_theme_is_on":""};
+//# sourceURL=eztoc-js-js-extra
+</script>
+<script id="eztoc-js-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.86-1785917416&#038;theme=6.1.21"></script>
+<script id="unveilhooks-js"async='async' src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/plugins/unveilhooks/ls.unveilhooks.min.js?ver=56c34f39b3d81e3db848cb510c81da30"></script>
+<script id="lazysize-js"async='async' src="//cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js?ver=56c34f39b3d81e3db848cb510c81da30"></script>
+<script id="slick-js"async='async' src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js?ver=56c34f39b3d81e3db848cb510c81da30"></script>
+<script id="tweenmax-js"async='async' src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js?ver=56c34f39b3d81e3db848cb510c81da30"></script>
+<script id="lity-js"async='async' src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.1/lity.min.js?ver=56c34f39b3d81e3db848cb510c81da30"></script>
+<script id="diver-main-js-js"async='async' src="https://exia.co.jp/bizroute/wp-content/themes/diver/js/diver.min.js?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21"></script>
+<script id="fancybox-purify-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21"></script>
+<script id="jquery-fancybox-js-extra">
+var efb_i18n = {"close":"Close","next":"Next","prev":"Previous","startSlideshow":"Start slideshow","toggleSize":"Toggle size"};
+//# sourceURL=jquery-fancybox-js-extra
+</script>
+<script id="jquery-fancybox-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=56c34f39b3d81e3db848cb510c81da30&#038;theme=6.1.21"></script>
+<script id="jquery-fancybox-js-after">
+var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'width':0,'height':0,'margin':20,'pixelRatio':'false','padding':0,'centerOnScroll':false,'enableEscapeButton':true,'speedIn':0,'speedOut':0,'overlayShow':true,'hideOnOverlayClick':true,'overlayOpacity':0,'minViewportWidth':0,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery([".nolightbox","a.wp-block-file__button","a.pin-it-button","a[href*='pinterest.com\/pin\/create']","a[href*='facebook.com\/share']","a[href*='twitter.com\/share']"].join(',')).addClass('nofancybox');
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+/* IMG */
+						var unlinkedImageBlocks=jQuery(".wp-block-image > img:not(.nofancybox,figure.nofancybox>img)");
+						unlinkedImageBlocks.wrap(function() {
+							var href = jQuery( this ).attr( "src" );
+							return "<a href='" + href + "'></a>";
+						});
+var fb_IMG_select=jQuery('a[href*=".jpg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpg" i]:not(.nofancybox),a[href*=".jpeg" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".jpeg" i]:not(.nofancybox),a[href*=".png" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".png" i]:not(.nofancybox),a[href*=".webp" i]:not(.nofancybox,li.nofancybox>a,figure.nofancybox>a),area[href*=".webp" i]:not(.nofancybox)');
+fb_IMG_select.addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery,.ngg-galleryoverview,.ngg-imagebrowser,.nextgen_pro_blog_gallery,.nextgen_pro_film,.nextgen_pro_horizontal_filmstrip,.ngg-pro-masonry-wrapper,.ngg-pro-mosaic-container,.nextgen_pro_sidescroll,.nextgen_pro_slideshow,.nextgen_pro_thumbnail_grid,.tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,.fancybox>a').each(function(){jQuery(this).fancybox(jQuery.extend(true,{},fb_opts,{'transition':'elastic','transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'mouseWheel':'false','changeSpeed':0,'changeFade':0}))});
+};};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+
+//# sourceURL=jquery-fancybox-js-after
+</script>
+<script id="jquery-easing-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1&#038;theme=6.1.21"></script>
+<script id="advanced-ads-find-adblocker-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js?theme=6.1.21"></script>
+<script id="google-recaptcha-js"async='async' src="https://www.google.com/recaptcha/api.js?render=6Le5GTsqAAAAAB5DWvDLZUqIIAONVqT3tLkR5i9J&#038;ver=3.0"></script>
+<script id="wp-polyfill-js"async='async' src="https://exia.co.jp/bizroute/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0&#038;theme=6.1.21"></script>
+<script id="wpcf7-recaptcha-js-before">
+var wpcf7_recaptcha = {
+    "sitekey": "6Le5GTsqAAAAAB5DWvDLZUqIIAONVqT3tLkR5i9J",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+//# sourceURL=wpcf7-recaptcha-js-before
+</script>
+<script id="wpcf7-recaptcha-js"async='async' src="https://exia.co.jp/bizroute/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.1.7&#038;theme=6.1.21"></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>		<script>!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+			</body>
+</html><style>
+img.bd{
+border:solid 1px #CCC;
+}
+
+a.template_link{
+font-weight:bold;
+font-size:120%;
+text-decoration:underline
+}
+</style>

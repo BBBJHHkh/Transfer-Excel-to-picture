@@ -1,0 +1,35 @@
+/*
+	Theme Name: diver_child
+	Template: diver
+	Description:  Diverの子テーマです。
+	Theme URI: http://tan-taka.com/diver/
+	Author: Takato Takagi
+ */
+@charset "utf-8";
+
+@font-face {
+	 font-family:"notosansjp";
+ 	 src: url("fonts/NotoSansJP-Regular.woff") format("woff");
+	 font-display: block;
+	 /*font-weight: 400;
+     font-style: normal;*/
+}
+
+.single_thumbnail img{
+    width: 760px;
+    height: 500px;  
+}
+#logo img ,.logo img{
+    width: 250px;
+    height: 60px;
+    vertical-align: middle;
+    margin: .5em 0;
+    padding: .3em 0;
+    object-fit: contain;
+}
+
+body {
+     font-family: 'Noto Sans JP';
+     /*font-size: 100%;*/
+     /*letter-spacing: 0.1em;*/
+}

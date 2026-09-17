@@ -1,0 +1,43 @@
+
+var ftGUID_8012590="64591623123BE4";
+var ftConfID_8012590="0";
+var ftParams_8012590="ftOBA=1&ft_agentEnv=0&ft_referrer=https://exia.co.jp/bizroute/download/youken01;https%3A%2F%2Fexia.co.jp%2Fbizroute%2Fdownload%2Fyouken01&gdpr=0&us_privacy=${US_PRIVACY}&ft_partnerimpid=ABAjH0jvo90BVg8CTn79UlDzIEsy;ABAjH0jvo90BVg8CTn79UlDzIEsy&site_url=https://exia.co.jp/bizroute/download/youken01&pub_id=1&sup_platform=1&ft_keyword=20854403490;DV360CampID:__20854403490__&cachebuster=324762.81601397117&ft_section=DV360CampID:20854403490";
+var ftKeyword_8012590="";
+var ftCustom_8012590="";
+var ftSection_8012590="DV360CampID:20854403490";
+var ftSegment_8012590="";
+var ftSegmentList_8012590=[];
+var ftRuleMatch_8012590="00010000";
+var ftTimestamp_8012590="1789670154";
+var ftGeoC2_8012590="jp";
+var ftGeoState_8012590="13";
+var ftGeoCity_8012590="tachikawa";
+var ftISP_8012590="ntt docomo inc.";
+var ftSpeed_8012590="broadband";
+var ftConnType_8012590="wifi";
+var ftDMA_8012590="392001";
+var ftLong_8012590="139.42";
+var ftLat_8012590="35.7";
+var ftPostal_8012590="190-0012";
+var ftTimeZone_8012590="+900";
+var ftMobileCarrier_8012590="";
+var ftImp8012590 = {};
+ftImp8012590.privacy = "x";
+ftImp8012590.guidAge = "375";
+ftImp8012590.impID = "E6126176-9C0C-FD6E-20BA-BB74B1158063";
+ftImp8012590.duid = "FT:64591623123BE4";
+
+ftImp8012590.ft_tpplid = "";
+ftImp8012590.ft_c = {};
+ftImp8012590.gdpr = "0";
+ftImp8012590.gdpr_consent = "";
+ftImp8012590.gdpr_pd = "";
+ftImp8012590.oob_consent = "";
+ftImp8012590.gdprStoredConsent = "";
+ftImp8012590.us_privacy = "!!US_PRIVACY!";
+ftImp8012590.gpc = "";
+
+ftImp8012590.jsAppend = "1";
+var ftCreativeId_8012590 = "5901764";
+(function(){var tag=document.getElementById("ft_servedby_8012590")||function(s){return s[s.length-1]}(document.getElementsByTagName("script")),js=document.createElement("script");js.src="https://ajs-assets.ftstatic.com/ftUtils.js";js.id="ftscript_m8012590";js.setAttribute("name","ftscript_m8012590");tag.parentNode.insertBefore(js,tag)})();window.fTChecker=window.fTChecker||function(id){if(!id)return false;id=""+id;if(window.hasOwnProperty("ftUtils")){window["ft"+id]=Object.assign({},window.ftUtils.common);window["ft"+id].getBannerConfig(id)}else(function(id){window.setTimeout(function(){window.fTChecker(id)},50)})(id)};window.fTChecker("8012590");
+
